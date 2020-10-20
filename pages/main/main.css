@@ -16,9 +16,10 @@ h1, h2, h3, h4 {
     margin: 0 auto;
 }
 
-.main-page__wrapper {
+.main-page__bg {
     background-image: url("../../assets/main-screen-background.png");
-    /*background-repeat: no-repeat;*/
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
@@ -63,16 +64,12 @@ header {
     display: flex;
     align-items: end;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 54px;
 }
 
 .hero__content {
-    margin-top: 160px;
+    margin-top: 166px;
     margin-right: 45px;
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*justify-content: space-between;*/
-    /*align-items: center;*/
 }
 
 .hero__title {
@@ -113,3 +110,200 @@ header {
     margin-left: 1px;
 }
 
+.about {
+    padding-top: 80px;
+    padding-bottom: 94px;
+}
+
+.about__wrapper {
+    width: 850px;
+    margin: 0 auto ;
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+.about__content {
+    margin-top: 6px;;
+}
+
+.section__title {
+    color: #545454;
+    font-family: Georgia, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+}
+
+.about__title {
+    width: 350px;
+    margin-top: 9px;
+    margin-bottom: 24px;
+}
+
+.section__descr {
+    width: 430px;
+    color: #4C4C4C;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 160%;
+}
+
+.about__content p:last-child {
+    margin-top: 25px;
+}
+
+
+
+.friends {
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.first-line {
+    display: block;
+}
+
+/*у всех секций одинаковые отступы????????*/
+
+.slider {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+}
+
+.slider__content {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.friends__title {
+    margin-top: 3px;
+    margin-bottom: 59px;
+    text-align: center;
+}
+
+.arrow {
+    margin-top: 30px;
+}
+
+.slider__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: space-between;*/
+    /*width: 270px;*/
+    width: calc(100% / 3);
+    min-height: 400px;
+    /*background: #FAFAFA;*/
+    /*border-radius: 9px;*/
+}
+
+.card__img {
+    margin-bottom: 26px;
+}
+
+.card__name {
+    font-family: Georgia, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: 0.06em;
+    color: #545454;
+    margin-bottom: 31px;
+}
+
+.card__btn {
+    width: 187px;
+    height: 52px;
+    background: white;
+    border-color: #F1CDB3;
+;
+}
+
+.btn-long {
+    display: block;
+    margin: 90px auto 0;
+    width: 261px;
+    height: 52px;
+    background: #F1CDB3;
+    border-radius: 100px;
+}
+
+.help {
+    padding-top: 80px;
+}
+
+.help-title {
+    text-align: center;
+}
+
+.help-content {
+    width: 100%;
+    margin: 61px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 119px;
+    row-gap: 55px;
+}
+
+.help-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.help-card__descr {
+    font-family: Georgia, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 115%;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+    margin-top: 26px;
+}
+
+.donation {
+    display: flex;
+    min-width: 915px;
+
+}
+
+.credit-card {
+    display: flex;
+    padding: 10px 0 0 15px;
+    width: 349px;
+    height: 43px;
+    background: #F1CDB3;
+    border-radius: 9px;
+}
+
+.credit-card__number {
+    margin-left: 15px;
+    font-family: Georgia, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
