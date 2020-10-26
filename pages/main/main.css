@@ -15,6 +15,10 @@ button {
     outline: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -28,11 +32,11 @@ button {
 header {
     display: flex;
     justify-content: space-between;
-    padding-top: 66px;
+    padding-top: 61px;
 }
 
 .header__navbar {
-    margin-top: 13px;
+    margin-top: 18px;
     width: 443px;
     display: flex;
     justify-content: space-between;
@@ -46,13 +50,29 @@ header {
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
+    transition: background .2s ease;
+}
+
+.nav__link:hover {
+    color: #F1CDB3;
 }
 
 .nav__link__active {
     border-bottom: 2px solid #F1CDB3;
 }
 
-.logo__subtitle {
+.logo-title {
+    margin-bottom: 7px;
+    font-family: Georgia, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+}
+
+.logo-subtitle {
     display: inline-block;
     margin-left: 4px;
     font-family: Arial, sans-serif;
@@ -61,13 +81,14 @@ header {
     font-size: 13px;
     line-height: 15px;
     letter-spacing: 1.3px;
+    color: #fff;
 }
 
 .hero {
     display: flex;
     align-items: end;
     justify-content: center;
-    margin-top: 58px;
+    margin-top: 59px;
 }
 
 .hero__content {
@@ -115,14 +136,25 @@ header {
     font-size: 17px;
     line-height: 130%;
     letter-spacing: 0.06em;
+    transition: background .2s ease;
+}
+
+.primary-btn:hover {
+    background: #FDDCC4;
 }
 
 .secondary-btn {
     border: 2px solid #F1CDB3;
+    transition: background .2s ease;
+}
+
+.secondary-btn:hover {
+    background: #FDDCC4;
 }
 
 .card__secondary-btn {
     width: 186px;
+    background-color: #fff;
     font-family: Georgia, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -134,14 +166,14 @@ header {
 
 .long-btn {
     display: block;
-    margin: 90px auto 0;
+    margin: 60px auto 0;
     width: 261px;
     height: 52px;
 }
 
 .about {
     padding-top: 80px;
-    padding-bottom: 94px;
+    padding-bottom: 96px;
 }
 
 .about__wrapper {
@@ -186,8 +218,13 @@ header {
     margin-top: 25px;
 }
 
+.friends-bg,
+.donation-bg {
+    background: #F6F6F6;;
+}
+
 .friends {
-    padding-top: 80px;
+    padding-top: 78px;
     padding-bottom: 100px;
 }
 
@@ -207,13 +244,22 @@ header {
     align-items: center;
     width: 52px;
     height: 52px;
+    margin-top: 2px;
     border: 2px solid #F1CDB3;
     border-radius: 100px;
+    cursor: pointer;
+    transition: background .2s ease;
+}
+
+.arrow:hover {
+    border-color: transparent;
+    background: #FDDCC4;
 }
 
 .slider__content {
-    display: flex;
     width: 90%;
+    display: flex;
+    justify-content: space-around;
     margin: 0 auto;
 }
 
@@ -223,16 +269,22 @@ header {
     text-align: center;
 }
 
-.arrow {
-    margin-top: 30px;
-}
-
 .slider__card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: calc(100% / 3);
-    min-height: 400px;
+    min-height: 435px;
+    background: #fff;
+    transition: background .2s ease;
+    cursor: pointer;
+}
+
+.card__img {
+    transition: background .4s ease;
+}
+
+.slider__card:hover .card__img {
+    background-color: #f0f0f0;
 }
 
 .card__img {
@@ -258,7 +310,7 @@ header {
 
 .help {
     padding-top: 80px;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
 }
 
 .help-title {
@@ -267,7 +319,7 @@ header {
 
 .help-content {
     width: 100%;
-    margin: 61px auto;
+    margin: 60px auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -297,7 +349,7 @@ header {
 .donation {
     display: flex;
     justify-content: center;
-    padding: 60px 0 101px;
+    padding: 82px 0 101px;
 }
 
 .donation-img {
@@ -392,11 +444,6 @@ header {
     justify-content: space-around;
 }
 
-.contact {
-    display: flex;
-    align-items: center;
-}
-
 .column-title {
     font-family: Georgia, sans-serif;
     font-style: normal;
@@ -408,6 +455,24 @@ header {
 }
 
 .contact-link {
+    display: flex;
+    align-items: center;
+}
+
+.contact-link__icon {
+    transition: .5s ease;
+}
+
+.contact-link:hover .contact-link__text {
+    color: #c47351;
+}
+
+.contact-link:hover .contact-link__icon {
+    transform: scale(1.4);
+    fill: #c47351;
+}
+
+.contact-link__text {
     display: inline-block;
     max-width: 260px;
     font-family: Georgia, sans-serif;
